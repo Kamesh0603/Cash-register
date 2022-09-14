@@ -23,23 +23,14 @@ function App() {
 
     var billamount = document.getElementById("bill").value;
     var amount = document.getElementById("amount").value;
-    //var simplechange = document.getElementById("simplechange");
     var washplates = document.getElementById("washplates");
+    
+    if((parseInt(amount)<0 || parseInt(billamount)<0)){
+      washplates.innerText ="Please enter postive values";
+      return
 
-//if amount<bill
-
-   /* if(parseInt(amount)<parseInt(billamount)){
-      washplates.innerText="come wash plates";
-      console.log("ok");
-      simplechange.innerText="";
-      for(var y=0;y<9;y++){
-        var td="td"
-        var dp=td+y;
-        document.getElementById(dp).innerText="0";
-
-      }
     }
-    */  
+
     // if amount >bill
     
     if(parseInt(amount)>=parseInt(billamount)){
